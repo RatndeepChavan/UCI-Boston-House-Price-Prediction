@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    
+<body bgcolor=#d4a3ae>
+    <div class="login">
+        <center>
+        <br>
+        <h1> HOUSE PRICE PREDICTION </h1> <br>
+		<form action="{{ url_for('predict')}}"method="post">
+			<input type="text" name="a", placeholder="CRIM"> <br><br>
+			<input type="text" name="b" placeholder="ZN" required="required" /> <br><br>
+			<input type="text" name="c" placeholder="INDUS" required="required" /> <br><br>
+			<input type="text" name="d" placeholder="CHAS" required="required" /> <br><br>
+			<input type="text" name="e" placeholder="NOX" required="required" /> <br><br>
+			<input type="text" name="f" placeholder="RM" required="required" /> <br><br>
+			<input type="text" name="g" placeholder="AGE" required="required" /> <br><br>
+			<input type="text" name="h" placeholder="DIS" required="required" /> <br><br>
+			<input type="text" name="i" placeholder="RAD" required="required" /> <br><br>
+			<input type="text" name="j" placeholder="TAX" required="required" /> <br><br>
+			<input type="text" name="k" placeholder="PTRATIO" required="required" /> <br><br>
+			<input type="text" name="l" placeholder="B" required="required" /> <br><br>
+			<input type="text" name="m" placeholder="LSTAT" required="required" /> <br><br></b>
+            
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict Price</button>
+        </form>
+        <br>
+        <br>
+        
+        {{prediction_text}}
+        <br>
+        <br>
+        <a href='/'>Reload</a>
+        
+        </center>
+    </div>
+
+</body>    
+</html>
+
