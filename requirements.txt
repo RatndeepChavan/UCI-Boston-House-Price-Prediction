@@ -1,6 +1,7 @@
 pip==21.0.1
 setuptools==52.0.0
 wheel==0.36.2
+mkl==2020.2
 argon2-cffi==20.1.0
 astroid==2.4.2
 async-generator==1.10
